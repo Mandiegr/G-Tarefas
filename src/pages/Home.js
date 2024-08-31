@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HomePage from '../images/homePage.png';
+import HomePage from '../assets/images/homePage.png';
 
 const Home = () => {
   return (
