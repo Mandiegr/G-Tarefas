@@ -6,10 +6,12 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Tasks from './pages/Tasks';
 import Navbar from './components/Navbar';
+import { TaskProvider } from './context/TaskContext';
 
 function App() {
   return (
     <AuthProvider>
+      <TaskProvider> 
       <Router>
         <Navbar />
         <Routes>
@@ -19,6 +21,7 @@ function App() {
           <Route path="/tasks" element={<Tasks />} />
         </Routes>
       </Router>
+      </TaskProvider>
     </AuthProvider>
   );
 }
